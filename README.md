@@ -2,7 +2,7 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### [Touch here to take a look at the deployed app👨‍💻](dev-portfolio-with-nextjs.vercel.app)
+### [Touch here to take a look at the deployed app👨‍💻](https://dev-portfolio-with-nextjs.vercel.app/)
 ## Getting Started
 
 First, instal the dependencies::
