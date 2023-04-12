@@ -30,17 +30,17 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">GearWestX</h1>
+            <h1 className="font-burtons text-xl hover:animate-bounce">GearWestX</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
+                  className=" cursor-pointer text-2xl animate-bounce"
                 />
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:animate-ping"
                   href="/SysEngineer2023.pdf"
                   target="_blank" 
             
@@ -54,7 +54,7 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Shawlorne West
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-bounce">
                Systems Engineer | Front-End Developer | WordPress Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
@@ -64,16 +64,19 @@ export default function Home() {
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
 
              <a 
+             className="hover:animate-bounce"
              href="https://twitter.com/WestShawlorne"
              target="_blank" >
              <AiFillTwitterCircle />
              </a>
               <a 
+              className="hover:animate-bounce"
               href="https://www.linkedin.com/in/shawlorne-west-297440228/"  
               target="_blank" >
               <AiFillLinkedin />
               </a>
               <a 
+               className="hover:animate-bounce"
                href="https://github.com/GearWestX"
                target="_blank" >
               <AiFillGithub />
@@ -81,13 +84,15 @@ export default function Home() {
               
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={myself} layout="fill" objectFit="cover" />
+              <Image 
+              className="hover:animate-spin"
+              src={myself} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">My Services</h3>
+            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl animate-bounce">My Services</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my career as a Software Developer
               I've done tasks and  projects using different technologies
@@ -102,13 +107,16 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={WordPress} width={100} height={100} />
+              <Image 
+              className = "hover:animate-spin" 
+              src={WordPress} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">
                 Web Design / Front-End
               </h3>
               <p className="py-2">
                 Developing pages from custom UX/UI designs to code into production.
               </p>
+              <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">WordPress</p>
               <p className="text-gray-800 py-1">Photoshop</p>
@@ -118,17 +126,20 @@ export default function Home() {
               <p className="text-gray-800 py-1">TailWindCSS</p>
               <p className="text-gray-800 py-1">Bootstrap</p>
               <p className="text-gray-800 py-1">Sass</p>
-
+              </div>
 
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image 
+              className = "hover:animate-spin" 
+              src={code} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">
                 Back-End
               </h3>
               <p className="py-2">
                 Databases design / queries, algorithms OOP, MVC, API's.
               </p>
+              <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">Node.Js</p>
               <p className="text-gray-800 py-1">MySQL</p>
@@ -138,32 +149,35 @@ export default function Home() {
               <p className="text-gray-800 py-1">Unix Commands</p>
               <p className="text-gray-800 py-1">C# with .NET/ EF</p>
               <p className="text-gray-800 py-1">Java with OOP</p>
-
+              </div>
 
 
 
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image 
+              className = "hover:animate-spin" 
+              src={consulting} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">IT Support / Admin / Consulting</h3>
               <p className="py-2">
                 Google IT support certified and thanks to my degree
                 I have excellent Software and Hardware troubleshooting skills.
               </p>
+              <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">Linux</p>
               <p className="text-gray-800 py-1">Networking</p>
               <p className="text-gray-800 py-1">CyberSecurity</p>
               <p className="text-gray-800 py-1">Virtualizations</p>
               <p className="text-gray-800 py-1">Cloud Support</p>
-
+              </div>
 
             </div>
           </div>
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">Portfolio</h3>
+            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl animate-bounce">Portfolio</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               So far so good I've worked side by side with Project Managers, Developers, UX/UI Designers, Team Leads 
               and collaborated in their repositories and websites.
@@ -180,7 +194,7 @@ export default function Home() {
               href="https://aglobal.org.ni/"
               target="_blank">
                <Image
-                className="rounded-lg object-scale-down scale-70 hover:scale-75 ease-in duration-500"
+                className="rounded-lg object-scale-down hover:animate-bounce"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -194,7 +208,7 @@ export default function Home() {
               href="https://gaggaalliance.org/"
               target="_blank">
               <Image
-                className="rounded-lg object-scale-down scale-70 hover:scale-75 ease-in duration-500"
+                className="rounded-lg object-scale-down hover:animate-bounce"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -207,7 +221,7 @@ export default function Home() {
               href="https://www.ramac.com.ni/"
               target="_blank">
                 <Image
-                className="rounded-lg object-scale-down scale-70 hover:scale-75 ease-in duration-500"
+                className="rounded-lg object-scale-down hover:animate-bounce"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -221,7 +235,7 @@ export default function Home() {
               href="https://hemco.com.ni/"
               target="_blank">
               <Image
-                className="rounded-lg object-scale-down scale-70 hover:scale-75 ease-in duration-500"
+                className="rounded-lg object-scale-down hover:animate-bounce"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
