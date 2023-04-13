@@ -40,7 +40,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:animate-ping"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:animate-pulse"
                   href="/SysEngineer2023.pdf"
                   target="_blank" 
             
@@ -54,7 +54,7 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
               Shawlorne West
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-bounce">
+            <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-pulse">
                Systems Engineer | Front-End Developer | WordPress Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
@@ -64,28 +64,29 @@ export default function Home() {
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
 
              <a 
-             className="hover:animate-bounce"
+             className="animate-bounce"
              href="https://twitter.com/WestShawlorne"
              target="_blank" >
              <AiFillTwitterCircle />
              </a>
               <a 
-              className="hover:animate-bounce"
+              className="animate-bounce"
               href="https://www.linkedin.com/in/shawlorne-west-297440228/"  
               target="_blank" >
               <AiFillLinkedin />
               </a>
               <a 
-               className="hover:animate-bounce"
+               className="animate-bounce"
                href="https://github.com/GearWestX"
                target="_blank" >
               <AiFillGithub />
               </a>
               
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative
+                            overflow-hidden mt-20 md:h-96 md:w-96 scale-30 hover:scale-75 ease-in duration-500">
               <Image 
-              className="hover:animate-spin"
+              className="hover:animate"
               src={myself} layout="fill" objectFit="cover" />
             </div>
           </div>
@@ -108,7 +109,7 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image 
-              className = "hover:animate-spin" 
+              className = "hover:animate-bounce" 
               src={WordPress} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">
                 Web Design / Front-End
@@ -131,7 +132,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image 
-              className = "hover:animate-spin" 
+              className = "hover:animate-bounce" 
               src={code} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">
                 Back-End
@@ -156,7 +157,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image 
-              className = "hover:animate-spin" 
+              className = "hover:animate-bounce" 
               src={consulting} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">IT Support / Admin / Consulting</h3>
               <p className="py-2">
@@ -194,7 +195,7 @@ export default function Home() {
               href="https://aglobal.org.ni/"
               target="_blank">
                <Image
-                className="rounded-lg object-scale-down hover:animate-bounce"
+                className="rounded-lg object-scale-down hover:animate-pulse"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -208,7 +209,7 @@ export default function Home() {
               href="https://gaggaalliance.org/"
               target="_blank">
               <Image
-                className="rounded-lg object-scale-down hover:animate-bounce"
+                className="rounded-lg object-scale-down hover:animate-pulse"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -221,7 +222,7 @@ export default function Home() {
               href="https://www.ramac.com.ni/"
               target="_blank">
                 <Image
-                className="rounded-lg object-scale-down hover:animate-bounce"
+                className="rounded-lg object-scale-down hover:animate-pulse"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
@@ -235,7 +236,7 @@ export default function Home() {
               href="https://hemco.com.ni/"
               target="_blank">
               <Image
-                className="rounded-lg object-scale-down hover:animate-bounce"
+                className="rounded-lg object-scale-down hover:animate-pulse"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
