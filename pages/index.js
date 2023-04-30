@@ -11,6 +11,8 @@ import code from "../public/code.png";
 import WordPress from "../public/wordpress.png"
 import consulting from "../public/consulting.png";
 import Image from "next/image";
+import projectDTS from "../public/DTS.png"
+import projectFCAM from "../public/FCAM.png"
 import project1 from "../public/AldeaGlobal.PNG"
 import project2 from "../public/gaggalliance.PNG"
 import project3 from "../public/ramac.PNG"
@@ -84,10 +86,12 @@ export default function Home() {
               
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative
-                            overflow-hidden mt-20 md:h-96 md:w-96 scale-30 hover:scale-75 ease-in duration-500">
+                            overflow-hidden mt-20 md:h-96 md:w-96 scale-75">
               <Image 
               className="hover:animate"
-              src={myself} layout="fill" objectFit="cover" />
+              src={myself} layout="fill" objectFit="cover" 
+              alt="Shawlorne West" 
+              priority />
             </div>
           </div>
         </section>
@@ -180,7 +184,7 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl animate-bounce">Portfolio</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-              So far so good I've worked side by side with Project Managers, Developers, UX/UI Designers, Team Leads 
+              So far I've worked side by side with Project Managers, Developers, UX/UI Designers, Team Leads 
               and collaborated in their repositories and websites.
             </p>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -190,6 +194,36 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://digitaltimesavers.com/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={projectDTS}
+              />    
+              </a>
+             
+            </div>
+
+            <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://fondocentroamericano.org/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={projectFCAM}
+              />    
+              </a>
+             
+            </div>
+            
             <div className="basis-1/3 flex-1 ">
               <a
               href="https://aglobal.org.ni/"
