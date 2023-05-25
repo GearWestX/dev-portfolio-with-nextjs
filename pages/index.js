@@ -6,18 +6,20 @@ import {
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
-import myself from "../public/myselfRedBackground.png"
+import myself from "../public/myselfRedBackground.png";
 import code from "../public/code.png";
-import WordPress from "../public/wordpress.png"
+import WordPress from "../public/wordpress.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
-import projectDTS from "../public/DTS.png"
-import projectFCAM from "../public/FCAM.png"
-import project1 from "../public/AldeaGlobal.PNG"
-import project2 from "../public/gaggalliance.PNG"
-import project3 from "../public/ramac.PNG"
-import project4 from "../public/hemco.PNG"
-import projectMalcolmTravels from "../public/projectMalcolmTravels.png"
+import projectDTS from "../public/DTS.png";
+import projectFCAM from "../public/FCAM.png";
+import project1 from "../public/AldeaGlobal.PNG";
+import project2 from "../public/gaggalliance.PNG";
+import project3 from "../public/ramac.PNG";
+import project4 from "../public/hemco.PNG";
+import projectMalcolmTravels from "../public/projectMalcolmTravels.png";
+import projectMikeys from "../public/projectMikeys.png";
+import projectFarMaker from "../public/ProjectFarMaker.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -43,7 +45,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:animate-pulse"
-                  href="/SysEngineer2023.pdf"
+                  href="/WordPress2023.pdf"
                   target="_blank" 
             
                 >
@@ -57,11 +59,11 @@ export default function Home() {
               Shawlorne West
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-pulse">
-               Systems Engineer | Front-End Developer | WordPress Developer.
+               Systems Engineer | Web Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Web Developer JavaScript / PHP based with enough skills to provide services in both Front-End & Back-End
-              , additionally have IT Support/Admin knowledge. 
+              - Plus having WordPress Development experience. 
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
 
@@ -101,7 +103,7 @@ export default function Home() {
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my career as a Software Developer
               I've done tasks and  projects using different technologies
-              and collaborated with talented people to support websites.
+              and collaborated with talented people to support and develop websites.
             </p>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -173,8 +175,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">Linux</p>
               <p className="text-gray-800 py-1">Networking</p>
               <p className="text-gray-800 py-1">CyberSecurity</p>
-              <p className="text-gray-800 py-1">Virtualizations</p>
-              <p className="text-gray-800 py-1">Cloud Support</p>
+              <p className="text-gray-800 py-1">Web hosting</p>
+              <p className="text-gray-800 py-1">Databases</p>
               </div>
 
             </div>
@@ -184,13 +186,15 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl animate-bounce">Portfolio</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-              So far I've worked side by side with Project Managers, Developers, UX/UI Designers, Team Leads 
-              and collaborated in their repositories and websites.
+              So far I've worked with US and UK-based companies in a team environment with 
+              Project Managers, Developers, UX/UI Designers, Team Leads
+              and collaborated in their projects and repositories.
             </p>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
              Below you can find some of the projects  
-             where I've added new pages, sections,
-             features, supported the back-end as a contributor.
+             where I've worked as a Full-Stack Web Developer
+             adding new pages, sections, features,
+             troubleshooting and supporting corporate clients.
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
@@ -208,17 +212,31 @@ export default function Home() {
               </a>
              
             </div>
-
             <div className="basis-1/3 flex-1 ">
               <a
-              href="https://malcolmtravels.com/"
+              href="https://mikeybs.com/"
               target="_blank">
                <Image
                 className="rounded-lg object-scale-down hover:animate-pulse"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={projectMalcolmTravels}
+                src={projectMikeys}
+              />    
+              </a>
+             
+            </div>
+            
+            <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://farmaker.com/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={projectFarMaker}
               />    
               </a>
              
@@ -295,6 +313,22 @@ export default function Home() {
               </a>
               
              </div>
+             
+             
+            <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://malcolmtravels.com/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={projectMalcolmTravels}
+              />    
+              </a>
+             
+            </div>
           </div>
         </section>
       </main>
