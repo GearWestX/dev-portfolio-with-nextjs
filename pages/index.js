@@ -17,7 +17,7 @@ import project1 from "../public/AldeaGlobal.PNG"
 import project2 from "../public/gaggalliance.PNG"
 import project3 from "../public/ramac.PNG"
 import project4 from "../public/hemco.PNG"
-
+import projectMalcolmTravels from "../public/projectMalcolmTravels.png"
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -204,6 +204,21 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={projectDTS}
+              />    
+              </a>
+             
+            </div>
+
+            <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://malcolmtravels.com/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={projectMalcolmTravels}
               />    
               </a>
              
