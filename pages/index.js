@@ -17,9 +17,10 @@ import project1 from "../public/AldeaGlobal.PNG";
 import project2 from "../public/gaggalliance.PNG";
 import project3 from "../public/ramac.PNG";
 import project4 from "../public/hemco.PNG";
-import projectMalcolmTravels from "../public/projectMalcolmTravels.png";
-import projectMikeys from "../public/projectMikeys.png";
+import projectMalcolmTravels from "../public/malcolm-travels.png";
+import projectMikeys from "../public/mikeys.png";
 import projectFarMaker from "../public/ProjectFarMaker.png";
+import BodyCrush from "../public/body-crush.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,7 +35,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl hover:animate-bounce">GearWestX</h1>
+            <h1 className="font-burtons text-xl">GearWestX</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -118,7 +119,7 @@ export default function Home() {
               className = "hover:animate-bounce" 
               src={WordPress} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">
-                Web Design / Front-End
+                Front-End
               </h3>
               <p className="py-2">
                 Developing pages from custom UX/UI designs to code into production.
@@ -126,9 +127,9 @@ export default function Home() {
               <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">WordPress</p>
-              <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">JavaScript</p>
+              <p className="text-gray-800 py-1">JQuery</p>
               <p className="text-gray-800 py-1">Next.JS</p>
               <p className="text-gray-800 py-1">TailWindCSS</p>
               <p className="text-gray-800 py-1">Bootstrap</p>
@@ -151,7 +152,6 @@ export default function Home() {
               <p className="text-gray-800 py-1">Node.Js</p>
               <p className="text-gray-800 py-1">MySQL</p>
               <p className="text-gray-800 py-1">PHP</p>
-              <p className="text-gray-800 py-1">MongoDB</p>
               <p className="text-gray-800 py-1">GraphQL</p>
               <p className="text-gray-800 py-1">Unix Commands</p>
               <p className="text-gray-800 py-1">C# with .NET/ EF</p>
@@ -174,7 +174,7 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">Linux</p>
               <p className="text-gray-800 py-1">Networking</p>
-              <p className="text-gray-800 py-1">CyberSecurity</p>
+              <p className="text-gray-800 py-1">Security</p>
               <p className="text-gray-800 py-1">Web hosting</p>
               <p className="text-gray-800 py-1">Databases</p>
               </div>
@@ -198,6 +198,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            
           <div className="basis-1/3 flex-1 ">
               <a
               href="https://digitaltimesavers.com/"
@@ -212,6 +213,38 @@ export default function Home() {
               </a>
              
             </div>
+
+            <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://bodycrushlondon.com/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={BodyCrush}
+              />    
+              </a>
+             
+            </div>
+
+            <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://malcolmtravels.com/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={projectMalcolmTravels}
+              />    
+              </a>
+             
+            </div>
+            
+            
             <div className="basis-1/3 flex-1 ">
               <a
               href="https://mikeybs.com/"
@@ -315,20 +348,7 @@ export default function Home() {
              </div>
              
              
-            <div className="basis-1/3 flex-1 ">
-              <a
-              href="https://malcolmtravels.com/"
-              target="_blank">
-               <Image
-                className="rounded-lg object-scale-down hover:animate-pulse"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={projectMalcolmTravels}
-              />    
-              </a>
-             
-            </div>
+        
           </div>
         </section>
       </main>
