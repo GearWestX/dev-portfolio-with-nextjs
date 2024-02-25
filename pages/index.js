@@ -46,7 +46,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:animate-pulse"
-                  href="/WordPress2023.pdf"
+                  href="/Web-Engineer-Shawlorne.pdf"
                   target="_blank" 
             
                 >
@@ -63,8 +63,8 @@ export default function Home() {
                Systems Engineer | Web Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Web Developer JavaScript / PHP based with enough skills to provide services in both Front-End & Back-End
-              - Plus having WordPress Development experience. 
+              Web Developer with enough skills to provide services in both Front-End & Back-End
+              - Plus having a Systems Engineering background. 
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
 
@@ -102,15 +102,18 @@ export default function Home() {
           <div>
             <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl animate-bounce">My Services</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my career as a Software Developer
-              I've done tasks and  projects using different technologies
-              and collaborated with talented people to support and develop websites.
+              I've lead web projects from scratch to production,
+              redisigned old-projects and solved lots of back-end / infrastructure 
+              level issues such as maintaining security tools, email servers,
+              configuring hosting environments, integrating third-party
+              applications and improved websites performance. 
+
             </p>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Mostly I've worked with back-end technologies such as:
-              <span className="text-teal-500"> Java, C#, Node.JS, MySQL, PHP. </span>
-              Nevetheless, you can find a very good use of my front-end skills
+              Additionally, a Software Development background with the following tech 
+              <span className="text-teal-500"> Java, C#, Node.JS, MySQL, Linux, PHP, MYSQL </span>
+              
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -122,11 +125,12 @@ export default function Home() {
                 Front-End
               </h3>
               <p className="py-2">
-                Developing pages from custom UX/UI designs to code into production.
+                Using templates, builders, web-core technologies 
               </p>
+
               <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
-              <p className="text-gray-800 py-1">WordPress</p>
+              <p className="text-gray-800 py-1">WordPress & Woocommerce</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">JavaScript</p>
               <p className="text-gray-800 py-1">JQuery</p>
@@ -145,7 +149,7 @@ export default function Home() {
                 Back-End
               </h3>
               <p className="py-2">
-                Databases design / queries, algorithms OOP, MVC, API's.
+                Databases, API's, Web Optimization, Dependencies, Environments.
               </p>
               <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
@@ -153,7 +157,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">MySQL</p>
               <p className="text-gray-800 py-1">PHP</p>
               <p className="text-gray-800 py-1">GraphQL</p>
-              <p className="text-gray-800 py-1">Unix Commands</p>
+              <p className="text-gray-800 py-1">Unix Commands and Environments</p>
               <p className="text-gray-800 py-1">C# with .NET/ EF</p>
               <p className="text-gray-800 py-1">Java with OOP</p>
               </div>
@@ -165,17 +169,16 @@ export default function Home() {
               <Image 
               className = "hover:animate-bounce" 
               src={consulting} width={100} height={100} />
-              <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">IT Support / Admin / Consulting</h3>
+              <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">Infrastructure</h3>
               <p className="py-2">
-                Google IT support certified and thanks to my degree
-                I have excellent Software and Hardware troubleshooting skills.
+                Monitoring, Optimizations & Deployments.
               </p>
               <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">Linux</p>
               <p className="text-gray-800 py-1">Networking</p>
-              <p className="text-gray-800 py-1">Security</p>
-              <p className="text-gray-800 py-1">Web hosting</p>
+              <p className="text-gray-800 py-1">Information Security</p>
+              <p className="text-gray-800 py-1">Web hosting & Domains</p>
               <p className="text-gray-800 py-1">Databases</p>
               </div>
 
@@ -184,18 +187,16 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl animate-bounce">Portfolio</h3>
+            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">Portfolio</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-              So far I've worked with US and UK-based companies in a team environment with 
-              Project Managers, Developers, UX/UI Designers, Team Leads
-              and collaborated in their projects and repositories.
+            Even tho my role has been mainly as a Web Developer I've also
+            had lots of responsabilities when it comes down to Configure 
+            and troubleshoot Hosting Servers, Domains, Email Systems, Databases,
+            Third-Party Integrations, Deployments and Security Tools thus
+            I have a great infrastructure experience.
             </p>
-            <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-             Below you can find some of the projects  
-             where I've worked as a Full-Stack Web Developer
-             adding new pages, sections, features,
-             troubleshooting and supporting corporate clients.
-            </p>
+          
+            
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             
