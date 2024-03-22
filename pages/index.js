@@ -35,7 +35,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">GearWestX</h1>
+            <h1 className="font-burtons text-xl">ShawDev</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -46,7 +46,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:animate-pulse"
-                  href="/Web-Engineer-Shawlorne.pdf"
+                  href="/Shawlorne-Developer.pdf"
                   target="_blank" 
             
                 >
@@ -60,11 +60,11 @@ export default function Home() {
               Shawlorne West
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-pulse">
-               Systems Engineer | Web Developer.
+               Full-Stack Developer | WordPress Developer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Web Developer with enough skills to provide services in both Front-End & Back-End
-              - Plus having a Systems Engineering background. 
+            Outgoing, friendly and a great communicator experienced in Full-Stack Web Development,
+            WordPress, Web Systems Administration plus having a Systems Engineering Degree
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
 
@@ -112,7 +112,7 @@ export default function Home() {
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               Additionally, a Software Development background with the following tech 
-              <span className="text-teal-500"> Java, C#, Node.JS, MySQL, Linux, PHP, MYSQL </span>
+              <span className="text-teal-500"> Java, Python, Node.JS, MySQL, Linux, PHP, MYSQL </span>
               
             </p>
           </div>
@@ -158,8 +158,8 @@ export default function Home() {
               <p className="text-gray-800 py-1">PHP</p>
               <p className="text-gray-800 py-1">GraphQL</p>
               <p className="text-gray-800 py-1">Unix Commands and Environments</p>
-              <p className="text-gray-800 py-1">C# with .NET/ EF</p>
-              <p className="text-gray-800 py-1">Java with OOP</p>
+              <p className="text-gray-800 py-1">Python with Django and FastAPI</p>
+
               </div>
 
 
@@ -187,13 +187,21 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">Portfolio</h3>
+            <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">Portfolio Top projects</h3>
+            
+            <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
+            From builds with Elementor, Divi, WPBakery, FSE with best practices
+            to custom themes support using ACF, CPT, starter templates such as Underscore. Also, 
+            Multilingual functionalities, Ecommerce solutions with Woocommerce,
+            and some custom plugin support. 
+            </p>
+            
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
             Even tho my role has been mainly as a Web Developer I've also
             had lots of responsabilities when it comes down to Configure 
-            and troubleshoot Hosting Servers, Domains, Email Systems, Databases,
+            and troubleshoot Hosting Servers, Domains, Mailing Systems, Databases,
             Third-Party Integrations, Deployments and Security Tools thus
-            I have a great infrastructure experience.
+            I have a great infrastructure experience when it comes down to deliver a product from a dev environment to production.
             </p>
           
             
