@@ -1,6 +1,6 @@
 import Head from "next/head";
 import {
-  AiFillTwitterCircle,
+  AiOutlineMedium,
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
@@ -21,6 +21,8 @@ import projectMalcolmTravels from "../public/malcolm-travels.png";
 import projectMikeys from "../public/mikeys.png";
 import projectFarMaker from "../public/ProjectFarMaker.png";
 import BodyCrush from "../public/body-crush.png";
+import project5 from "/public/roscoebrown-project.png";
+import project6 from "/public/tbf-project.png";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -46,7 +48,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:animate-pulse"
-                  href="/Shawlorne-Developer.pdf"
+                  href="/Shawlorne - Developer.pdf"
                   target="_blank" 
             
                 >
@@ -60,19 +62,20 @@ export default function Home() {
               Shawlorne West
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-pulse">
-               Full-Stack Developer | WordPress Developer.
+               WordPress Developer | Web System Admin.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Outgoing, friendly and a great communicator experienced in Full-Stack Web Development,
-            WordPress, Web Systems Administration plus having a Systems Engineering Degree
+            Outgoing, friendly and a great communicator with 4+ years of experience in WordPress, 
+            Full-Stack Development and Web Systems Administration plus having a Systems Engineering Degree. You've found yourself a full tech savvy! 👨‍💻 
+
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
 
              <a 
              className="animate-bounce"
-             href="https://twitter.com/WestShawlorne"
+             href="https://medium.com/@maucaulaywest"
              target="_blank" >
-             <AiFillTwitterCircle />
+             <AiOutlineMedium />
              </a>
               <a 
               className="animate-bounce"
@@ -106,7 +109,7 @@ export default function Home() {
               redisigned old-projects and solved lots of back-end / infrastructure 
               level issues such as maintaining security tools, email servers,
               configuring hosting environments, integrating third-party
-              applications and improved websites performance. 
+              applications and improved website performance. 
 
             </p>
             
@@ -155,10 +158,10 @@ export default function Home() {
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">Node.Js</p>
               <p className="text-gray-800 py-1">MySQL</p>
-              <p className="text-gray-800 py-1">PHP</p>
+              <p className="text-gray-800 py-1">PHP, Plugin Development</p>
               <p className="text-gray-800 py-1">GraphQL</p>
               <p className="text-gray-800 py-1">Unix Commands and Environments</p>
-              <p className="text-gray-800 py-1">Python with Django and FastAPI</p>
+              <p className="text-gray-800 py-1">Python with Django, Flask and FastAPI</p>
 
               </div>
 
@@ -193,15 +196,13 @@ export default function Home() {
             From builds with Elementor, Divi, WPBakery, FSE with best practices
             to custom themes support using ACF, CPT, starter templates such as Underscore. Also, 
             Multilingual functionalities, Ecommerce solutions with Woocommerce,
-            and some custom plugin support. 
+            and some custom Plugin Development. 
             </p>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Even tho my role has been mainly as a Web Developer I've also
-            had lots of responsabilities when it comes down to Configure 
-            and troubleshoot Hosting Servers, Domains, Mailing Systems, Databases,
-            Third-Party Integrations, Deployments and Security Tools thus
-            I have a great infrastructure experience when it comes down to deliver a product from a dev environment to production.
+            Even tho my role has been mainly as a Web Developer I've also  
+            managed dev environments and deployments so the full stack is in your hands!
+                     
             </p>
           
             
@@ -340,6 +341,7 @@ export default function Home() {
               </a>
               
             </div>
+
             <div className="basis-1/3 flex-1">
             <a
               href="https://hemco.com.ni/"
@@ -350,6 +352,38 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={project4}
+              />
+  
+              </a>
+              
+             </div>
+
+             <div className="basis-1/3 flex-1">
+            <a
+              href="https://roscoebrown.com/"
+              target="_blank">
+              <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={project5}
+              />
+  
+              </a>
+              
+             </div>
+
+             <div className="basis-1/3 flex-1">
+            <a
+              href="https://tbfoundation.org/"
+              target="_blank">
+              <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={project6}
               />
   
               </a>
