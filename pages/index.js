@@ -3,6 +3,8 @@ import {
   AiOutlineMedium,
   AiFillLinkedin,
   AiFillGithub,
+  AiFillFileWord
+
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -62,11 +64,11 @@ export default function Home() {
               Shawlorne West
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-pulse">
-               WordPress Developer | Web Systems Admin.
+               WordPress Developer | Hosting Support | Systems Engineer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            Outgoing, friendly and a great communicator with 4+ years of experience in WordPress, 
-            Full-Stack Development, Web Hosting Support and Systems Engineering as a plus.👨‍💻 
+            Outgoing, friendly, and a great communicator with 4 years of experience in WordPress, Full-Stack Development, Web Hosting Support, and Systems Engineering,
+            with WordPress contributor experience in Support Forums, Translations, and plugin development.
 
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -77,6 +79,14 @@ export default function Home() {
              target="_blank" >
              <AiOutlineMedium />
              </a>
+
+             <a 
+             className="animate-bounce"
+             href="https://profiles.wordpress.org/shawwest/"
+             target="_blank" >
+             <AiFillFileWord />
+             </a>
+
               <a 
               className="animate-bounce"
               href="https://www.linkedin.com/in/shawlorne-west-297440228/"  
@@ -106,16 +116,14 @@ export default function Home() {
             <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl animate-bounce">My Services</h3>
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               I've lead web projects from scratch to production,
-              redisigned old-projects and solved lots of back-end / infrastructure 
-              level issues such as maintaining security tools, email servers,
-              configuring hosting environments, integrating third-party
-              applications and improved website performance. 
+              redisigned old-projects, managed hosting providers, security tools, email clients,
+              provided customer support with ticketing systems and improved website performance with WPO. 
 
             </p>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
               Additionally, a Software Development background with the following tech 
-              <span className="text-teal-500"> Java, Python, Node.JS, MySQL, Linux, PHP, MYSQL </span>
+              <span className="text-teal-500"> Java, Python, Bash Scripting, Python, Node.JS, MySQL, Linux, PHP, MYSQL </span>
               
             </p>
           </div>
@@ -128,12 +136,13 @@ export default function Home() {
                 Front-End
               </h3>
               <p className="py-2">
-                Using templates, builders, web-core technologies 
+                Custom themes, builders, web-core technologies 
               </p>
 
               <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
               <p className="text-gray-800 py-1">WordPress & Woocommerce</p>
+              <p className="text-gray-800 py-1">CTPs & ACF</p>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">JavaScript</p>
               <p className="text-gray-800 py-1">JQuery</p>
@@ -141,6 +150,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">TailWindCSS</p>
               <p className="text-gray-800 py-1">Bootstrap</p>
               <p className="text-gray-800 py-1">Sass</p>
+              
               </div>
 
             </div>
@@ -152,7 +162,7 @@ export default function Home() {
                 Back-End
               </h3>
               <p className="py-2">
-                Databases, API's, Web Optimization, Dependencies, Environments.
+             
               </p>
               <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
@@ -160,8 +170,10 @@ export default function Home() {
               <p className="text-gray-800 py-1">MySQL</p>
               <p className="text-gray-800 py-1">PHP, Plugin Development</p>
               <p className="text-gray-800 py-1">GraphQL</p>
-              <p className="text-gray-800 py-1">Unix Commands and Environments</p>
-              <p className="text-gray-800 py-1">Python with Django, Flask and FastAPI</p>
+              <p className="text-gray-800 py-1">Python: Django, Flask, FastAPI</p>
+              
+              
+              
 
               </div>
 
@@ -174,15 +186,16 @@ export default function Home() {
               src={consulting} width={100} height={100} />
               <h3 className="text-4xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-2xl">Infrastructure</h3>
               <p className="py-2">
-                Monitoring, Optimizations & Deployments.
+                Hosting Support
               </p>
               <div className="hover:animate-pulse">
               <h4 className="py-4 text-teal-600">Skillset</h4>
-              <p className="text-gray-800 py-1">Linux</p>
-              <p className="text-gray-800 py-1">Networking</p>
-              <p className="text-gray-800 py-1">Information Security</p>
-              <p className="text-gray-800 py-1">Web hosting & Domains</p>
-              <p className="text-gray-800 py-1">Databases</p>
+              <p className="text-gray-800 py-1">Linux, Apache, NGINX</p>
+              <p className="text-gray-800 py-1">Unix Command-line, WP-CLI, composer, bash scripting, powershell</p>
+              <p className="text-gray-800 py-1">WHM, cPanel, MySQL, and Virtuozzo.</p>
+              <p className="text-gray-800 py-1">Domains, SSL certificates, DNS Records, WAF, CDNs, SMTP, SFTP, FTP, and cron jobs</p>
+            
+
               </div>
 
             </div>
@@ -193,15 +206,15 @@ export default function Home() {
             <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">Portfolio Top projects</h3>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-            From builds with Elementor, Divi, WPBakery, FSE with best practices
-            to custom themes support using ACF, CPT, starter templates such as Underscore. Also, 
-            Multilingual functionalities, Ecommerce solutions with Woocommerce,
-            and some custom Plugin Development. 
+            I have experience building websites with various tools such as Elementor, Divi, WPBakery, and starter templates like Underscore.
+             
+            I also work with custom themes using ACF, CPT, and handle multilingual functionalities, e-commerce, fundraising, and community solutions using WordPress, Woocommerce, and Plugin Development. 
+
             </p>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Even tho my role has been mainly as a Web Developer I've also  
-            managed dev environments and deployments so the full stack is in your hands!
+            Although I primarily work as a web developer, I also manage hostings, development environments and deployments, 
+            so I am experienced in full-stack development.
                      
             </p>
           
