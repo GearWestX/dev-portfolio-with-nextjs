@@ -19,6 +19,8 @@ import project1 from "../public/AldeaGlobal.PNG";
 import project2 from "../public/gaggalliance.PNG";
 import project3 from "../public/ramac.PNG";
 import project4 from "../public/hemco.PNG";
+import Bulso from "../public/bulso.png";
+import WaxEloquent from "../public/wax-eloquent.png";
 import projectMalcolmTravels from "../public/malcolm-travels.png";
 import projectMikeys from "../public/mikeys.png";
 import projectFarMaker from "../public/ProjectFarMaker.png";
@@ -64,7 +66,7 @@ export default function Home() {
               Shawlorne West
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl hover:animate-pulse">
-               WordPress Developer | Hosting Support | Systems Engineer.
+               Web Developer | Hosting Support | Systems Engineer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             Outgoing, friendly, and a great communicator with 4 years of experience in WordPress, Full-Stack Development, Web Hosting Support, and Systems Engineering,
@@ -136,7 +138,7 @@ export default function Home() {
                 Front-End
               </h3>
               <p className="py-2">
-                Custom themes, builders, web-core technologies 
+                Custom themes, builders and frameworks
               </p>
 
               <div className="hover:animate-pulse">
@@ -206,22 +208,37 @@ export default function Home() {
             <h3 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-4xl">Portfolio Top projects</h3>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-            I have experience building websites with various tools such as Elementor, Divi, WPBakery, and starter templates like Underscore.
+            I have experience building websites with Elementor, Divi, WPBakery, Gutenberg blocks and FSE.
              
-            I also work with custom themes using ACF, CPT, and handle multilingual functionalities, e-commerce, fundraising, and community solutions using WordPress, Woocommerce, and Plugin Development. 
+            Also, working with custom themes/templates using ACF, CPT, multilingual functionalities, e-commerce, fundraising, and community solutions using WordPress, Woocommerce shops with custom templates, and Plugin Development. 
 
             </p>
             
             <p className="text-xl py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Although I primarily work as a web developer, I also manage hostings, development environments and deployments, 
-            so I am experienced in full-stack development.
+            Although my primarily work is as a web developer, 
+            I also manage from hosting and dev environments to full site deployments, back-ups, server tuning and some DevOps.
                      
             </p>
           
             
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            
+          
+          <div className="basis-1/3 flex-1 ">
+              <a
+              href="https://neweloquent.waxeloquent.com/"
+              target="_blank">
+               <Image
+                className="rounded-lg object-scale-down hover:animate-pulse"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={WaxEloquent}
+              />    
+              </a>
+             
+            </div>
+          
           <div className="basis-1/3 flex-1 ">
               <a
               href="https://digitaltimesavers.com/"
@@ -278,21 +295,6 @@ export default function Home() {
                 height={"100%"}
                 layout="responsive"
                 src={projectMikeys}
-              />    
-              </a>
-             
-            </div>
-            
-            <div className="basis-1/3 flex-1 ">
-              <a
-              href="https://farmaker.com/"
-              target="_blank">
-               <Image
-                className="rounded-lg object-scale-down hover:animate-pulse"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={projectFarMaker}
               />    
               </a>
              
@@ -373,14 +375,14 @@ export default function Home() {
 
              <div className="basis-1/3 flex-1">
             <a
-              href="https://roscoebrown.com/"
+              href="https://bulso.waxeloquent.com/"
               target="_blank">
               <Image
                 className="rounded-lg object-scale-down hover:animate-pulse"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={project5}
+                src={Bulso}
               />
   
               </a>
