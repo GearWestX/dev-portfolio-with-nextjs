@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Hey there 👋</div>
+    <div class="text-5xl font-bold">I'm Shawlorne West</div>
+    <div class="text-3xl py-3 font-bold">
+      Web Developer | Hosting Support | Security Specialist
+    </div>
+    <div class="py-2">
+      <text class="text-lg">
+        Dynamic and approachable web developer with 4 years of expertise in
+        WordPress, web security, hosting support, and Linux distributions -
+        Mostly Ubuntu, CentOS, AlmaLinux and Kali Linux (Yep, I do some ethical
+        hacking and pentesting to test security on my clients ;) ).
+        <br />
+        <br />
+        An active WordPress contributor with experience in support forums, translations,
+        and plugin development, showcasing a passion for collaboration and problem-solving.
+        I have collaborated with marketing agencies, software development groups,
+        law firms, and healthcare industries, and managed my clients in the US as
+        a freelancer, demonstrating strong leadership and organizational skills.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a class="btn" href="mailto:maucaulaywest.gmail.com" target="_blank">
+        Let's connect!</a
+      >
+      <a
+        href="/Shawlorne West - CV.pdf"
+        download="Shawlorne West - CV.pdf"
+        class="btn btn-outline ml-5"
+      >
+        Download my CV
+      </a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="Center for the Arts"
+    img="/project-6.png"
+    desc="Visual Arts Academy and exhibits with 3rd party integrations for donations and ticket purchases."
+    url="https://boroarts.org/"
+    badge="NEW"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Wax Eloquent"
+    img="/project1.png"
+    desc="Digital Marketing Agency website made with Elementor, WordPress, CPT and ACFs."
+    url="https://waxeloquent.com/"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="MikeyBS - Store"
+    img="/project-2.png"
+    desc="Woocommerce store with printing functionalities, load balanced with Cloudflare."
+    url="https://mikeybs.com/"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Global Alliance for Green and Gender Action"
+    img="/project-4.png"
+    desc="Underscore based custom theme with custom post types and ACFs."
+    url="https://fondocentroamericano.org/"
+    badge="Multilingual"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Dental Specialists of Connecticut"
+    img="/project-7.png"
+    desc="Dental site with amazing UI, developed with Elementor."
+    url="https://growyourpracticenow.com/"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Roscoebrown"
+    img="/project-8.png"
+    desc="High traffic plumbing site with third-party integrations forms, online payments, e-commerce shops, a custom plugin and more."
+    url="https://roscoebrown.com/"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>
