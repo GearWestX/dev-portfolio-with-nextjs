@@ -1,7 +1,7 @@
 # Portfolio Website using Astro, TailWindCSS and DaisyUI
 
 
-Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with a Blog, CV, Project Section, Store, and RSS Feed.
+Personal Portfolio Website built with Astro and TailwindCSS with a Blog, CV, Project Section, Store, and RSS Feed.
 
 ## Installation
 
